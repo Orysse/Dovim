@@ -6,10 +6,23 @@ return {
         config = true,
     },
 
+    -- dracula
+    {
+        'Mofiqul/dracula.nvim',
+        priority = 1000, -- make sure to load this before all the other start plugins
+    },
+
     -- rose-pine
     {
         'rose-pine/neovim', 
         name = 'rose-pine',
+        priority = 1000, -- make sure to load this before all the other start plugins
+    },
+
+    -- rose-pine
+    {
+        'rebelot/kanagawa.nvim', 
+        priority = 1000, -- make sure to load this before all the other start plugins
     },
 
     -- tokyonight
@@ -17,6 +30,15 @@ return {
         "folke/tokyonight.nvim",
         priority = 1000,
         opts = { style = "moon" },
+        priority = 1000, -- make sure to load this before all the other start plugins
+    },
+
+    -- everforest
+    {
+        "neanias/everforest-nvim",
+        version = false,
+        lazy = false,
+        priority = 1000, -- make sure to load this before all the other start plugins
     },
 
     -- catppuccin
@@ -25,7 +47,6 @@ return {
         priority = 1000,
         opts = {
             integrations = {
-                alpha = true,
                 cmp = true,
                 mason = true,
                 native_lsp = {
@@ -41,6 +62,7 @@ return {
                 telescope = true,
                 treesitter = true,
                 neotree = true,
+                lualine = false,
             },
         },
         config = function()

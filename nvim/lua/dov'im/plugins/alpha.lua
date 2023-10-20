@@ -40,6 +40,11 @@ return {
             "                                       - Renaud-Dov Devers       ",
         }
 
+        local euh = {
+            "           Tu veux relation prof élève ? :pikalul:               ",
+            "                                       - Renaud-Dov Devers       ",
+        }
+
         local japon = {
             "           Tu stop tes pornos japonais.                          ",
             "                                       - Renaud-Dov Devers       ",
@@ -50,7 +55,7 @@ return {
             "           envoyer a @orysse sur discord   - Fan2Dov             ",
         }
 
-        local quotes = {calculator, japon, need}
+        local quotes = {calculator, euh, japon, need}
 
         function TableConcat(t1,t2)
             for i=1,#t2 do
